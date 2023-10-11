@@ -15,7 +15,7 @@ describe('Funcionalidade Página de Produtos', () => {
             .click()
     });
 
-    it.only('Deve adicionar um produto ao carrinhho', () => {
+    it('Deve adicionar um produto ao carrinhho', () => {
         let quantidade = 10
 
         cy.get('[class="product-block grid"]')
@@ -27,5 +27,17 @@ describe('Funcionalidade Página de Produtos', () => {
 
             cy.get('.dropdown-toggle > .mini-cart-items').should('contain', quantidade)
             cy.get('.woocommerce-message').should('contain', quantidade + ' × “Abominable Hoodie” foram adicionados no seu carrinho.')
+    });
+
+    it('Deve adicionar produtos ao carrinho - usando comando customizado', () => {
+   
+        cy.addProdutos('Aero Daily Fitness Tee', 'M', 'Black', 3)
+        
+    });
+
+    it.only('Deve adicionar produtos ao carrinho - usando comando customizado', () => {
+   
+        cy.addProdutos('Abominable Hoodie', 'XL', 'Blue', 4)
+        
     });
 });

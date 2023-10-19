@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:run": "npx cypress run - browser chrome",
+    "cy:run": "npx cypress run",
     "cy:open": "npx cypress open",
     "cy:report": "npx cypress run --record --key 596b8eb6-ffb9-4b13-98d6-b36cf4cc448a"
   },
@@ -14,9 +14,9 @@
   "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^8.1.0",
-    "cypress": "^13.3.0"
+    "cypress": "^13.3.2"
   },
   "dependencies": {
-    "faker": "^6.6.6"
+    "faker": "^5.5.3"
   }
 }

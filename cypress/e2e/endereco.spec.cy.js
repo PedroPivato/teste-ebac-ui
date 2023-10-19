@@ -10,7 +10,7 @@ describe('Funcionalidade Endereços - Faturamente e Entrega', () => {
         })
     });
 
-    it('Deve fazer cadastro de faturamento com sucesso', () => {
+    it.only('Deve fazer cadastro de faturamento com sucesso', () => {
         EnderecoPage.editarEnderecoFaturamento('Flavio', 'Silva', 'EBAC', 'Brasil', 'Rua Norte', '234', 'São Paulo', 'São Paulo', "12345678", '1132383102', 'ebac@email.com')
         cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso')
         

@@ -6,5 +6,5 @@ module.exports = defineConfig({
     baseUrl: 'http://lojaebac.ebaconline.art.br/'
   },
   // Outras configurações do Cypress
-  video: true, // Isso habilitará a gravação de vídeos
+  video: false, // Isso habilitará a gravação de vídeos
 })

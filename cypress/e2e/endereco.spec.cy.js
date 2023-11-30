@@ -34,7 +34,7 @@ describe('Funcionalidade Endereços - Faturamente e Entrega', () => {
         
     });
 
-    it('Deve fazer cadastro de entrega com sucesso', () => {
+    it('Deve fazer cadastro de entrega com sucesso', () => {''
 
         EnderecoPage.editarEnderecoEntrega(
             dadosEndereco[2].nome,

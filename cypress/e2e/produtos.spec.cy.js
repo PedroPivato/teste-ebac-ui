@@ -31,7 +31,7 @@ describe('Funcionalidade Página de Produtos', () => {
 
     it('Deve adicionar produtos ao carrinho - usando comando customizado', () => {
    
-        cy.addProdutos('Aero Daily Fitness Tee', 'M', 'Black', 3)
+        cy.addProdutos('Chaz Kangeroo Hoodie', 'M', 'Black', 3)
         
     });
 
